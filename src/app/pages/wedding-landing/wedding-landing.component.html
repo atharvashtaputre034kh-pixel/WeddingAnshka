@@ -1,0 +1,188 @@
+<div class="scroll-progress"></div>
+
+<audio #bgMusic>
+  <source src="assets/music.mp3" type="audio/mpeg" />
+</audio>
+
+<!-- HERO -->
+<section class="hero reveal-section">
+
+  <div class="hero-gray" [class.hide-gray]="videoStarted"></div>
+
+  <video #mobileVideo class="video-mobile" muted playsinline preload="auto">
+    <source src="assets/weddingmobile.mp4" type="video/mp4" />
+  </video>
+
+  <video #desktopVideo class="video-desktop" muted playsinline preload="auto">
+    <source src="assets/weddingdesktop.mp4" type="video/mp4" />
+  </video>
+
+  <div class="petals">
+    <span *ngFor="let p of petals"></span>
+  </div>
+
+  <div class="hero-text">
+    <h2 class="allura">we are getting married</h2>
+    <h1>Atharva & Anushka</h1>
+  </div>
+
+</section>
+
+
+<!-- DATE -->
+<section class="date-section reveal-section">
+
+  <h2 class="allura">Wedding Date</h2>
+  <h2 class="allura">08.05.2026</h2>
+
+  <div class="countdown allura">
+
+    <div>Count Down</div>
+    <div>{{ days }} <span>Days</span></div>
+    <div>{{ hours }} <span>Hours</span></div>
+    <div>{{ minutes }} <span>Minutes</span></div>
+    <div>{{ seconds }} <span>Seconds</span></div>
+
+  </div>
+
+</section>
+
+
+<!-- CAROUSEL -->
+<section class="carousel-section reveal-section">
+
+  <div class="carousel-track">
+
+    <img src="assets/carosal/1.jpeg" />
+    <img src="assets/carosal/2.jpeg" />
+    <img src="assets/carosal/3.jpeg" />
+    <img src="assets/carosal/4.jpeg" />
+    <img src="assets/carosal/5.jpeg" />
+
+    <!-- duplicate for smooth infinite scroll -->
+    <img src="assets/carosal/1.jpeg" />
+    <img src="assets/carosal/2.jpeg" />
+    <img src="assets/carosal/3.jpeg" />
+    <img src="assets/carosal/4.jpeg" />
+    <img src="assets/carosal/5.jpeg" />
+
+  </div>
+
+</section>
+
+
+
+<!-- MESSAGE -->
+<section class="message-section reveal-section">
+
+<p class="allura">
+Welcome to the official wedding website of two people who finally realized
+that ordering food together for life is cheaper than ordering separately.
+
+<br><br>
+
+After years of debating where to eat, what to watch, and who said sorry first,
+we have decided to make it permanent.
+
+<br><br>
+
+We are getting married!
+
+<br><br>
+
+Dress well, eat a lot, dance like nobody is watching,
+and help us create memories we can blame on the DJ later.
+
+</p>
+
+</section>
+
+<!-- BANNER -->
+<section class="mid-image reveal-section">
+  <img class="mid-image" src="assets/bannerAnurva1.png" />
+</section>
+
+
+<!-- TIMELINE -->
+<section class="timeline-section reveal-section">
+
+<h1 class="allura title">Wedding Festivities</h1>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<div class="timeline-content left">
+<h4>05 May 2026 • 06:00 PM</h4>
+<span>Mehendi – Colours, laughter & henna</span>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-content right">
+<h4>06 May 2026 • 09:00 AM</h4>
+<span>Grahmukh – Divine blessings</span>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-content left">
+<h4>07 May 2026 • 09:00 AM</h4>
+<span>Haldi – Golden celebration</span>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-content right">
+<h4>07 May 2026 • 07:00 PM</h4>
+<span>Sangeet – Music & Dance</span>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-content left">
+<h4>08 May 2026 • 11:15 AM</h4>
+<span>The Wedding - Where two hearts unite and a beautiful forever begins</span>
+</div>
+</div>
+
+<div class="timeline-item">
+<div class="timeline-content right">
+<h4>07 May 2026 • 12:00 PM onwards</h4>
+<span>Feast – A celebration of taste, laughter, and unforgettable moments</span>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="location reveal-section">
+  <img src="assets/location.png">
+</section>
+<!-- VENUE -->
+<section class="venue-section reveal-section">
+
+<div class="venue-container">
+
+<div class="map">
+
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3801.080314265174!2d74.01583650247088!3d17.693665701325216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc239c2ec876401%3A0xd0072550154814a9!2sKanishk%20Multipurpose%20Hall!5e0!3m2!1sen!2sin"
+loading="lazy"></iframe>
+
+</div>
+
+<div class="venue-text">
+
+<h2>The Venue</h2>
+
+<p>
+Kanishka Multipurpose Hall<br>
+Sadar Bazar, Satara
+</p>
+
+</div>
+
+</div>
+
+</section>
