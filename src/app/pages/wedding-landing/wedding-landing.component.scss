@@ -35,6 +35,7 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: bottom;
+  top: 20;
 }
 
 /* DESKTOP VIDEO HIDDEN */
@@ -124,6 +125,7 @@ body {
   padding: 80px 20px;
   background: #fdffdf;
   text-align: center;
+  color: #bb4317;
 }
 .timeline-section {
   padding: 80px 20px;
@@ -132,6 +134,7 @@ body {
 }
 
 .countdown {
+  font-size: 15px;
   display: flex;
   justify-content: center;
   gap: 15px;
@@ -141,6 +144,7 @@ body {
 
 .countdown div {
   font-size: 20px;
+  color: #bb4317;
 }
 
 /* CAROUSEL */
@@ -287,6 +291,19 @@ body {
   .timeline-item:nth-child(even) .timeline-content {
     left: 58%;
     padding-left: 20px;
+  }
+
+  .timeline-content h4 {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  .timeline-content span {
+    font-size: 10px;
+  }
+  .countdown div {
+    font-size: 15px;
+    color: #bb4317;
   }
 }
 
